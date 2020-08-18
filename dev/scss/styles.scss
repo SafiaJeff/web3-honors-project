@@ -19,7 +19,11 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_section-1";
-@import "sections/_section-2";
-@import "sections/_section-3";
-@import "sections/_section-4";
+@import "sections/employment-content.scss";
+@import "sections/experiment-content.scss";
+@import "sections/gallery-content.scss";
+@import "sections/impact-content.scss";
+@import "sections/index-content.scss";
+@import "sections/publicity-content.scss";
+
+
