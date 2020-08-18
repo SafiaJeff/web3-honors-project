@@ -12,11 +12,19 @@ h1,h2,h3,h4{
     padding: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 p{
     margin: 0;
     padding: 0;
 }
 
 .section-title{
-    font-weight: 300;
+    font-weight: rem-calc(50);
+}
+
+.pull-quote{
+    font-weight: rem-calc(100);
 }
