@@ -13,18 +13,33 @@ h1,h2,h3,h4{
 }
 
 h1{
+    //titles at top of page "employment" "impact"
     text-align: center;
+    font-size: rem-calc(50);
+    
 }
 
-p{
-    margin: 0;
-    padding: 0;
+h2{
+    //subheadings "campaign design needs designers desperately"
+    text-align: left;
 }
 
-.section-title{
-    font-weight: rem-calc(50);
+.body-text{
+    //regular paragraph text
+    padding: 0px 10px;
+    text-align: center;
+
+    @include md{
+        text-align: left;
+    }
+}
+
+.open-text{
+    //light paragraph w/ opened leading
+    line-height: rem-calc(30);
 }
 
 .pull-quote{
-    font-weight: rem-calc(100);
+    //large quote seen in employment/impact page
+    font-size: rem-calc(40);
 }
