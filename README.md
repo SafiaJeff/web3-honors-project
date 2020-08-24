@@ -1,2 +1,1 @@
-# Web3 Final
-Aaron, Kelsey, Maddie, Safia
+# Web3 Honors Project
