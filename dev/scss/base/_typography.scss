@@ -2,44 +2,104 @@
     Typography
 ============= */
 
+// font-family: 'Exo', sans-serif;
+// bold 700
+// font-family: 'Fjalla One', sans-serif;
+// reg 400
+// font-family: 'Libre Baskerville', serif;
+// reg 400
+// font-family: 'Libre Franklin', sans-serif;
+// thin 100
+// reg 400 
+// bold 700
+
 //remember: if adding in a new font family, must embed it in head.kit
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     //titles at top of page "employment" "impact"
     text-align: center;
-    font-size: rem-calc(50);
-    
+    font-family: 'Fjalla One', sans-serif;
+
+    @include lg {
+        font-size: rem-calc(99);
+    }
+
 }
 
-h2{
+h2 {
+    //text directly below title of page
+    text-align: left;
+    font-family: 'Libre Baskerville', sans-serif;
+
+    @include lg {
+        font-size: rem-calc(40);
+        line-height: rem-calc(60);
+    }
+}
+
+
+h3 {
     //subheadings "campaign design needs designers desperately"
     text-align: left;
+    font-family: 'Exo', sans-serif;
+
+    @include lg {
+        font-weight: 700;
+        font-size: rem-calc(45);
+        line-height: rem-calc(60);
+    }
 }
 
-.body-text{
+.body-text {
     //regular paragraph text
     padding: 0px 10px;
     text-align: center;
 
-    @include md{
+    @include md {
         text-align: left;
+    }
+
+    font-family: 'Libre Franklin',
+    sans-serif;
+
+    @include lg {
+        font-size: rem-calc(21);
+        line-height: rem-calc(26);
     }
 }
 
-.open-text{
+.open-text {
     //light paragraph w/ opened leading
     line-height: rem-calc(30);
+    font-family: 'Libre Franklin', sans-serif;
+
+    @include lg {
+        font-weight: 100;
+        font-size: rem-calc(30);
+        line-height: rem-calc(54);
+    }
+
 }
 
-.pull-quote{
+.pull-quote {
     //large quote seen in employment/impact page
     font-size: rem-calc(40);
+
+    font-family: 'Libre Baskerville', sans-serif;
+
+    @include lg {
+        font-size: rem-calc(60);
+        line-height: rem-calc(90);
+    }
 }
